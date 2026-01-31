@@ -5,7 +5,7 @@
       "title": "Somoyer Chabikathi",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover.png",
       "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Books/Somoyer.Chabikathi.exe",
-      "price": 1
+      "price": 0
     } ,
     {
       "id": "somoyer2",
@@ -16,6 +16,7 @@
     }
   ]
 }
+
 
 
 
