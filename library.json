@@ -4,18 +4,19 @@
       "id": "somoyer",
       "title": "Somoyer Chabikathi",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover.png",
-      "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Books/Somoyer.Chabikathi.exe"
+      "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Books/Somoyer.Chabikathi.exe",
       "price": 1
     } ,
     {
       "id": "somoyer2",
       "title": "Somoyer Chabikathi 2",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover 2.png",
-      "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Somoyer.Chabikathi.2/Somoyer.Chabikathi.2.exe"
+      "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Somoyer.Chabikathi.2/Somoyer.Chabikathi.2.exe",
       "price": 1
     }
   ]
 }
+
 
 
 
