@@ -289,13 +289,27 @@ def update_stats(book_id, price):
 # ==================== RUN SERVER ====================
 
 if __name__ == '__main__':
+    import os
+    
+    # Get port from environment (Railway provides this)
+    port = int(os.environ.get('PORT', 5000))
+    
     print("=" * 60)
     print("📊 Book Purchase API Server")
     print("=" * 60)
     print(f"Admin Key: {ADMIN_KEY}")
     print("IMPORTANT: Change ADMIN_KEY before deploying!")
+    print(f"Port: {port}")
     print("=" * 60)
     
+    # Production-ready server
+    app.run(host='0.0.0.0', port=port, debug=False)
+```
+
+**Your Procfile looks correct**, so keep it as is:
+```
+web: gunicorn backend_server:app --bind 0.0.0.0:$PORT
     # Development server (use gunicorn for production)
 
     app.run(host='0.0.0.0', port=5000, debug=True)
+
