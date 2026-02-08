@@ -18,6 +18,12 @@ PURCHASES_FILE = Path("data/purchases.json")
 STATS_FILE = Path("data/stats.json")
 PENDING_FILE = Path("data/pending.json")
 ADMIN_KEY = "LiveKitaabAdminHaiAC@2014"  # Change this!
+@app.route('/')
+def home():
+    return jsonify({
+        'status': 'online',
+        'service': 'Book Purchase API'
+    })
 
 # Ensure data directory exists
 Path("data").mkdir(exist_ok=True)
@@ -299,4 +305,5 @@ def update_stats(book_id, price):
         print(f"Port: {port}")
         print("=" * 60)
         app.run(host='0.0.0.0', port=port, debug=False)
+
 
