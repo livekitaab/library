@@ -17,7 +17,7 @@ CORS(app)  # Allow requests from launcher
 PURCHASES_FILE = Path("data/purchases.json")
 STATS_FILE = Path("data/stats.json")
 PENDING_FILE = Path("data/pending.json")
-ADMIN_KEY = "your-secret-admin-key-change-this"  # Change this!
+ADMIN_KEY = "LiveKitaabAdminHaiAC@2014"  # Change this!
 
 # Ensure data directory exists
 Path("data").mkdir(exist_ok=True)
@@ -297,4 +297,5 @@ if __name__ == '__main__':
     print("=" * 60)
     
     # Development server (use gunicorn for production)
+
     app.run(host='0.0.0.0', port=5000, debug=True)
