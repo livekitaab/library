@@ -15,7 +15,7 @@
       "id": "somoyer2",
       "title": "Somoyer Chabikathi 2",
       "type": "novella",
-      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover2.png",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover 2.png",
       "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Books/Somoyer.Chabikathi.exe",
       "price": 1,
       "description": "A gripping mystery in 200 pages",
@@ -26,7 +26,7 @@
       "id": "somoyer2",
       "title": "Somoyer Chabikathi 2",
       "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover2.png",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover 2.png",
       "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Books/Somoyer.Chabikathi.exe",
       "price": 1,
       "description": "A gripping mystery in 200 pages",
@@ -35,3 +35,4 @@
     }
   ]
 }
+
