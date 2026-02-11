@@ -3,32 +3,35 @@
     {
       "id": "somoyer",
       "title": "Somoyer Chabikathi",
+      "type": "novel",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover.png",
       "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Books/Somoyer.Chabikathi.exe",
-      "price": 0
-    } ,
+      "price": 0,
+      "description": "A thrilling journey through time",
+      "author": "Author Name",
+      "pages": 350
+    },
     {
       "id": "somoyer2",
       "title": "Somoyer Chabikathi 2",
-      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover 2.png",
-      "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Somoyer.Chabikathi.2/Mobile.Book.exe",
-      "price": 1
+      "type": "novella",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover2.png",
+      "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Books/Somoyer.Chabikathi.exe",
+      "price": 1,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Author Name",
+      "pages": 180
+    },
+    {
+      "id": "somoyer2",
+      "title": "Somoyer Chabikathi 2",
+      "type": "short_story",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover2.png",
+      "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Books/Somoyer.Chabikathi.exe",
+      "price": 1,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Author Name",
+      "pages": 180
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
