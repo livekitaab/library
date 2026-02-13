@@ -12,14 +12,14 @@
       "pages": 350
     },
     {
-      "id": "somoyer2",
-      "title": "Somoyer Chabikathi 2",
+      "id": "ordhek_payer_chap",
+      "title": "Ordhek Payer Chap",
       "type": "novella",
-      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover 2.png",
-      "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Books/Somoyer.Chabikathi.exe",
-      "price": 1,
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Payer Chap Cover.png",
+      "exe": "https://github.com/livekitaab/library/releases/download/Payer_chap/Ordhek.Payer.Chap.exe",
+      "price": 30,
       "description": "A gripping mystery in 200 pages",
-      "author": "Author Name",
+      "author": "Panpriyo Nondi",
       "pages": 180
     },
     {
@@ -35,4 +35,5 @@
     }
   ]
 }
+
 
