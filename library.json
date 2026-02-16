@@ -23,11 +23,22 @@
       "pages": 180
     },
     {
-      "id": "somoyer2",
-      "title": "Somoyer Chabikathi 2",
+      "id": "Ek_Muhurter_Sporsho",
+      "title": "Ek Muhurter Sporsho",
       "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover 2.png",
-      "exe": "https://github.com/achatterjee4561-cyber/library/releases/download/Books/Somoyer.Chabikathi.exe",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover2.png",
+      "exe": "https://github.com/livekitaab/library/releases/download/Muhurter_Sporsho/Ek.Muhurter.Sporsho.exe",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Shubhankar Babu",
+      "pages": 180
+    },
+    {
+      "id": "Jontrer_Songsar",
+      "title": "Poripati Jontrer Songsar",
+      "type": "short_story",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover1.png",
+      "exe": "https://github.com/livekitaab/library/releases/download/JontrerSongsar/Jontrer.Sonsar.exe",
       "price": 1,
       "description": "A gripping mystery in 200 pages",
       "author": "Author Name",
@@ -35,6 +46,7 @@
     }
   ]
 }
+
 
 
 
