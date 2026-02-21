@@ -5,7 +5,7 @@
       "title": "Somoyer Chabikathi",
       "type": "novel",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover.png",
-      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/releases/download/Books/Test.clbk",
+      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/Test.clbk",
       "price": 0,
       "description": "A thrilling journey through time",
       "author": "Team Livekitaab",
@@ -52,4 +52,5 @@
     }
   ]
 }
+
 
