@@ -5,7 +5,7 @@
       "title": "Somoyer Chabikathi",
       "type": "novel",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover.png",
-      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/Test.clbk",
+      "file": "https://github.com/livekitaab/library/releases/download/Books/Test.clbk",
       "price": 0,
       "description": "A thrilling journey through time",
       "author": "Team Livekitaab",
@@ -20,7 +20,9 @@
       "price": 30,
       "description": "A gripping mystery in 200 pages",
       "author": "Panpriyo Nondi",
-      "pages": 180
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "password_hash": "d3c6d12b3d8f186fa2a984420557a3d61bd7468bc64e50170a79073c54fc15c2"
     },
     {
       "id": "Ek_Muhurter_Sporsho",
@@ -31,7 +33,9 @@
       "price": 10,
       "description": "A gripping mystery in 200 pages",
       "author": "Shubhankar Babu",
-      "pages": 180
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "password_hash": "473392fec2211baf8b76f5b1f8375cf10023c2188a5b5bd4c7da944ad4f690e2"
     },
     {
       "id": "Jontrer_Songsar",
@@ -42,17 +46,9 @@
       "price": 10,
       "description": "A gripping mystery in 200 pages",
       "author": "Shubhankar Babu",
-      "pages": 180
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "password_hash": "2156df56651dd299cd47048ed73b7cddb67279616e4eefa74ccefb2766fc7722"
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
