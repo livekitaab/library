@@ -43,7 +43,7 @@
       "type": "short_story",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover1.png",
       "exe": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/JS.lbk",
-      "price": 10,
+      "price": 1,
       "description": "A gripping mystery in 200 pages",
       "author": "Shubhankar Babu",
       "pages": 180,
@@ -52,6 +52,7 @@
     }
   ]
 }
+
 
 
 
