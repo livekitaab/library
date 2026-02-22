@@ -9,53 +9,48 @@
       "price": 0,
       "description": "A thrilling journey through time",
       "author": "Team Livekitaab",
-      "pages": 350
+      "pages": 350,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "LIVEKITAAB-SOMOYER-2026"
     },
     {
       "id": "ordhek_payer_chap",
       "title": "Ordhek Payer Chap",
       "type": "novella",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Payer Chap Cover.png",
-      "exe": "https://github.com/livekitaab/library/releases/download/Payer_chap/Ordhek.Payer.Chap.exe",
+      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/JS.lbk",
       "price": 30,
       "description": "A gripping mystery in 200 pages",
       "author": "Panpriyo Nondi",
       "pages": 180,
       "upi_id": "arohanchatterjee881@okicici",
-      "password_hash": "d3c6d12b3d8f186fa2a984420557a3d61bd7468bc64e50170a79073c54fc15c2"
+      "author_key": "NANDI-PAYER-CHAP-2026"
     },
     {
       "id": "Ek_Muhurter_Sporsho",
       "title": "Ek Muhurter Sporsho",
       "type": "short_story",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover2.png",
-      "exe": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/EMS.lbk",
-      "price": 1,
-      "description": "A gripping mystery in 200 pages",
+      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/EMS.lbk",
+      "price": 10,
+      "description": "A short story about a fleeting moment",
       "author": "Shubhankar Babu",
       "pages": 180,
       "upi_id": "arohanchatterjee881@okicici",
-      "password_hash": "473392fec2211baf8b76f5b1f8375cf10023c2188a5b5bd4c7da944ad4f690e2"
+      "author_key": "BABU-EMS-2026"
     },
     {
       "id": "Jontrer_Songsar",
       "title": "Poripati Jontrer Songsar",
       "type": "short_story",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover1.png",
-      "exe": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/JS.lbk",
-      "price": 1,
+      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/JS.lbk",
+      "price": 10,
       "description": "A gripping mystery in 200 pages",
       "author": "Shubhankar Babu",
       "pages": 180,
       "upi_id": "arohanchatterjee881@okicici",
-      "password_hash": "2156df56651dd299cd47048ed73b7cddb67279616e4eefa74ccefb2766fc7722"
+      "author_key": "BABU-JS-2026"
     }
   ]
 }
-
-
-
-
-
-
-
