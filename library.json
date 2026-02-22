@@ -29,7 +29,7 @@
       "title": "Ek Muhurter Sporsho",
       "type": "short_story",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover2.png",
-      "exe": "https://github.com/livekitaab/library/releases/download/Muhurter_Sporsho/Ek.Muhurter.Sporsho.exe",
+      "exe": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/EMS.lbk",
       "price": 10,
       "description": "A gripping mystery in 200 pages",
       "author": "Shubhankar Babu",
@@ -42,7 +42,7 @@
       "title": "Poripati Jontrer Songsar",
       "type": "short_story",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover1.png",
-      "exe": "https://github.com/livekitaab/library/releases/download/JontrerSongsar/Jontrer.Sonsar.exe",
+      "exe": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/JS.lbk",
       "price": 10,
       "description": "A gripping mystery in 200 pages",
       "author": "Shubhankar Babu",
@@ -52,6 +52,7 @@
     }
   ]
 }
+
 
 
 
