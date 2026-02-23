@@ -52,11 +52,21 @@ def proxy():
     if not target:
         return jsonify({'error': 'Missing url'}), 400
     try:
-        r = requests.get(
-            target, stream=True, allow_redirects=True,
-            headers={'User-Agent': 'LiveKitaab-Proxy/1.0'},
-            timeout=30
+        session = requests.Session()
+        session.max_redirects = 10
+        r = session.get(
+            target,
+            stream=True,
+            allow_redirects=True,
+            headers={
+                'User-Agent': 'Mozilla/5.0',
+                'Accept': '*/*'
+            },
+            timeout=60
         )
+        if r.status_code != 200:
+            return jsonify({'error': f'Upstream returned {r.status_code}', 'url': r.url}), 502
+
         return Response(
             r.iter_content(chunk_size=8192),
             content_type='application/octet-stream',
@@ -247,3 +257,4 @@ if __name__ == '__main__':
     print(f"Port: {port}")
     print("=" * 60)
     app.run(host='0.0.0.0', port=port, debug=False)
+
