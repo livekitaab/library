@@ -323,10 +323,7 @@ def proxy():
         content_type='application/octet-stream',
         headers={'Access-Control-Allow-Origin': '*'}
     )
-```
 
-Also make sure `requests` is in your `requirements.txt`. If it's not already there, add it on a new line:
-```
-requests
+
 
 
