@@ -306,4 +306,27 @@ def update_stats(book_id, price):
         print("=" * 60)
         app.run(host='0.0.0.0', port=port, debug=False)
 
+import requests
+from flask import Flask, request, Response
+
+@app.route('/proxy')
+def proxy():
+    target = request.args.get('url')
+    if not target:
+        return {'error': 'Missing url'}, 400
+    
+    r = requests.get(target, stream=True, allow_redirects=True,
+                     headers={'User-Agent': 'LiveKitaab-Proxy/1.0'})
+    
+    return Response(
+        r.iter_content(chunk_size=8192),
+        content_type='application/octet-stream',
+        headers={'Access-Control-Allow-Origin': '*'}
+    )
+```
+
+Also make sure `requests` is in your `requirements.txt`. If it's not already there, add it on a new line:
+```
+requests
+
 
