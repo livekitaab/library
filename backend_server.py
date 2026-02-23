@@ -9,6 +9,8 @@ import json
 from pathlib import Path
 from datetime import datetime
 import secrets
+import requests
+from flask import Flask, request, Response
 
 app = Flask(__name__)
 CORS(app)  # Allow requests from launcher
@@ -306,8 +308,7 @@ def update_stats(book_id, price):
         print("=" * 60)
         app.run(host='0.0.0.0', port=port, debug=False)
 
-import requests
-from flask import Flask, request, Response
+
 
 @app.route('/proxy')
 def proxy():
@@ -323,6 +324,7 @@ def proxy():
         content_type='application/octet-stream',
         headers={'Access-Control-Allow-Origin': '*'}
     )
+
 
 
 
