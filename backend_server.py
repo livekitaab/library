@@ -46,31 +46,37 @@ init_stats()
 
 # ==================== PROXY ====================
 
-@app.route('/proxy')
+@app.route('/proxy', methods=['GET', 'OPTIONS'])
 def proxy():
+    if request.method == 'OPTIONS':
+        return Response('', headers={
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, OPTIONS',
+            'Access-Control-Allow-Headers': '*',
+        })
+
     target = request.args.get('url')
     if not target:
         return jsonify({'error': 'Missing url'}), 400
     try:
-        session = requests.Session()
-        session.max_redirects = 10
-        r = session.get(
-            target,
-            stream=True,
-            allow_redirects=True,
-            headers={
-                'User-Agent': 'Mozilla/5.0',
-                'Accept': '*/*'
-            },
+        r = requests.get(
+            target, stream=True, allow_redirects=True,
+            headers={'User-Agent': 'LiveKitaab-Proxy/1.0'},
             timeout=60
         )
-        if r.status_code != 200:
-            return jsonify({'error': f'Upstream returned {r.status_code}', 'url': r.url}), 502
+        forward_headers = {
+            'Access-Control-Allow-Origin': '*',
+            'Cache-Control': 'public, max-age=3600',
+        }
+        # Forward Content-Length so mobile can pre-allocate memory correctly
+        if 'content-length' in r.headers:
+            forward_headers['Content-Length'] = r.headers['content-length']
 
         return Response(
-            r.iter_content(chunk_size=8192),
+            r.iter_content(chunk_size=65536),
+            status=r.status_code,
             content_type='application/octet-stream',
-            headers={'Access-Control-Allow-Origin': '*'}
+            headers=forward_headers
         )
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -232,6 +238,46 @@ def get_recent_purchases():
     )[:50]
     return jsonify({'purchases': recent})
 
+# ==================== REJECT / POLL ====================
+
+@app.route('/api/reject-purchase', methods=['POST'])
+def reject_purchase():
+    data              = request.json
+    verification_code = data.get('verification_code')
+    admin_key         = data.get('admin_key')
+    if admin_key != ADMIN_KEY:
+        return jsonify({'error': 'Unauthorized'}), 401
+    if not verification_code:
+        return jsonify({'error': 'Missing verification code'}), 400
+    pending   = load_json(PENDING_FILE, {"purchases": []})
+    remaining = [p for p in pending.get('purchases', [])
+                 if p.get('verification_code') != verification_code]
+    if len(remaining) == len(pending.get('purchases', [])):
+        return jsonify({'error': 'Code not found'}), 404
+    pending['purchases'] = remaining
+    save_json(PENDING_FILE, pending)
+    return jsonify({'success': True})
+
+@app.route('/api/poll-purchase', methods=['POST'])
+def poll_purchase():
+    """User's browser polls this every 5s after submitting UTR."""
+    data              = request.json
+    verification_code = data.get('verification_code')
+    book_id           = data.get('book_id')
+    if not verification_code or not book_id:
+        return jsonify({'approved': False, 'status': 'missing_params'})
+    purchases = load_json(PURCHASES_FILE, {"purchases": []})
+    for p in purchases.get('purchases', []):
+        if (p.get('verification_code') == verification_code and
+                p.get('book_id') == book_id and
+                p.get('status') == 'confirmed'):
+            return jsonify({'approved': True})
+    pending = load_json(PENDING_FILE, {"purchases": []})
+    for p in pending.get('purchases', []):
+        if p.get('verification_code') == verification_code:
+            return jsonify({'approved': False, 'status': 'pending'})
+    return jsonify({'approved': False, 'status': 'not_found'})
+
 # ==================== HELPERS ====================
 
 def update_stats(book_id, price):
@@ -257,4 +303,3 @@ if __name__ == '__main__':
     print(f"Port: {port}")
     print("=" * 60)
     app.run(host='0.0.0.0', port=port, debug=False)
-
