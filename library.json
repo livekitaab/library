@@ -18,7 +18,7 @@
       "title": "Ordhek Payer Chap",
       "type": "novella",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Payer Chap Cover.png",
-      "file": "https://github.com/livekitaab/library/releases/download/Payer_chap/Ordhek.Payer.Chap.clbk",
+      "chapters": "https://github.com/livekitaab/library/raw/refs/heads/main/Books/Ordhek%20Payer%20Chap/Chapter.json",
       "price": 30,
       "description": "A gripping mystery in 200 pages",
       "author": "Panpriya Nandi",
@@ -54,6 +54,7 @@
     }
   ]
 }
+
 
 
 
