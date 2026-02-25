@@ -5,17 +5,17 @@
     {
       "order": 1,
       "title": "Chapter 1",
-      "file": "https://github.com/livekitaab/library/raw/refs/heads/main/Books/Ordhek%20Payer%20Chap/Chapter%201.lbk"
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Ordhek%20Payer%20Chap/Chapter%201.lbk"
     },
     {
       "order": 2,
       "title": "Chapter 2",
-      "file": "https://github.com/livekitaab/library/raw/refs/heads/main/Books/Ordhek%20Payer%20Chap/Chapter%202.lbk"
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Ordhek%20Payer%20Chap/Chapter%202.lbk"
     },
     {
       "order": 3,
       "title": "Chapter 3",
-      "file": "https://github.com/livekitaab/library/raw/refs/heads/main/Books/Ordhek%20Payer%20Chap/Chapter%203.lbk"
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Ordhek%20Payer%20Chap/Chapter%203.lbk"
     }
   ]
 }
