@@ -59,24 +59,26 @@ def proxy():
     if not target:
         return jsonify({'error': 'Missing url'}), 400
     try:
+        # Download entire file into memory first.
+        # Critical for mobile: streaming with redirects loses Content-Length,
+        # causing mobile browsers to truncate the response and JSZip to see
+        # a corrupted ZIP. Downloading fully then sending avoids this.
         r = requests.get(
-            target, stream=True, allow_redirects=True,
+            target, allow_redirects=True,
             headers={'User-Agent': 'LiveKitaab-Proxy/1.0'},
-            timeout=60
+            timeout=120
         )
-        forward_headers = {
-            'Access-Control-Allow-Origin': '*',
-            'Cache-Control': 'public, max-age=3600',
-        }
-        # Forward Content-Length so mobile can pre-allocate memory correctly
-        if 'content-length' in r.headers:
-            forward_headers['Content-Length'] = r.headers['content-length']
+        data = r.content  # full file in memory
 
         return Response(
-            r.iter_content(chunk_size=65536),
-            status=r.status_code,
+            data,
+            status=200,
             content_type='application/octet-stream',
-            headers=forward_headers
+            headers={
+                'Access-Control-Allow-Origin': '*',
+                'Content-Length': str(len(data)),
+                'Cache-Control': 'public, max-age=3600',
+            }
         )
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -145,20 +147,28 @@ def verify_purchase():
     if not purchase_to_verify:
         return jsonify({'error': 'Verification code not found'}), 404
 
-    purchases = load_json(PURCHASES_FILE, {"purchases": []})
     purchase_to_verify['status']       = 'confirmed'
     purchase_to_verify['confirmed_at'] = datetime.now().isoformat()
-    purchases['purchases'].append(purchase_to_verify)
-    save_json(PURCHASES_FILE, purchases)
+
+    if purchase_to_verify.get('type') == 'subscription':
+        subs_path = Path('data/subscriptions.json')
+        subs = load_json(subs_path, {'subscriptions': []})
+        subs['subscriptions'].append(purchase_to_verify)
+        save_json(subs_path, subs)
+    else:
+        purchases = load_json(PURCHASES_FILE, {"purchases": []})
+        purchases['purchases'].append(purchase_to_verify)
+        save_json(PURCHASES_FILE, purchases)
+        update_stats(purchase_to_verify['book_id'], purchase_to_verify['price'])
 
     pending['purchases'] = remaining
     save_json(PENDING_FILE, pending)
-    update_stats(purchase_to_verify['book_id'], purchase_to_verify['price'])
 
     return jsonify({
         'success':        True,
-        'book_id':        purchase_to_verify['book_id'],
-        'transaction_id': purchase_to_verify['transaction_id']
+        'book_id':        purchase_to_verify.get('book_id', ''),
+        'transaction_id': purchase_to_verify['transaction_id'],
+        'type':           purchase_to_verify.get('type', 'purchase')
     })
 
 @app.route('/api/check-purchase', methods=['POST'])
@@ -237,6 +247,74 @@ def get_recent_purchases():
         reverse=True
     )[:50]
     return jsonify({'purchases': recent})
+
+# ==================== SUBSCRIPTIONS ====================
+
+SUB_PRICE = 200
+SUB_DAYS  = 30
+
+@app.route('/api/request-subscription', methods=['POST'])
+def request_subscription():
+    data           = request.json
+    transaction_id = data.get('transaction_id')
+    price          = data.get('price', SUB_PRICE)
+
+    if not transaction_id:
+        return jsonify({'error': 'Missing transaction_id'}), 400
+
+    # Check not already used
+    subs = load_json(Path('data/subscriptions.json'), {'subscriptions': []})
+    for s in subs.get('subscriptions', []):
+        if s.get('transaction_id') == transaction_id:
+            return jsonify({'error': 'Transaction ID already used'}), 400
+
+    pending = load_json(PENDING_FILE, {'purchases': []})
+    for p in pending.get('purchases', []):
+        if p.get('transaction_id') == transaction_id:
+            return jsonify({'error': 'Transaction ID already used'}), 400
+
+    verification_code = secrets.token_hex(4).upper()
+    pending['purchases'].append({
+        'verification_code': verification_code,
+        'book_id':           '__subscription__',
+        'price':             price,
+        'transaction_id':    transaction_id,
+        'timestamp':         datetime.now().isoformat(),
+        'status':            'pending',
+        'type':              'subscription',
+        'days':              SUB_DAYS
+    })
+    save_json(PENDING_FILE, pending)
+    return jsonify({'success': True, 'verification_code': verification_code})
+
+
+@app.route('/api/poll-subscription', methods=['POST'])
+def poll_subscription():
+    verification_code = request.json.get('verification_code')
+    if not verification_code:
+        return jsonify({'approved': False})
+
+    # Check confirmed subscriptions file
+    subs = load_json(Path('data/subscriptions.json'), {'subscriptions': []})
+    for s in subs.get('subscriptions', []):
+        if s.get('verification_code') == verification_code and s.get('status') == 'confirmed':
+            return jsonify({'approved': True, 'days': s.get('days', SUB_DAYS)})
+
+    # Still pending?
+    pending = load_json(PENDING_FILE, {'purchases': []})
+    for p in pending.get('purchases', []):
+        if p.get('verification_code') == verification_code:
+            return jsonify({'approved': False, 'status': 'pending'})
+
+    return jsonify({'approved': False, 'status': 'not_found'})
+
+
+@app.route('/api/admin/subscriptions', methods=['GET'])
+def get_subscriptions():
+    if request.headers.get('X-Admin-Key') != ADMIN_KEY:
+        return jsonify({'error': 'Unauthorized'}), 401
+    subs = load_json(Path('data/subscriptions.json'), {'subscriptions': []})
+    return jsonify(subs)
 
 # ==================== REJECT / POLL ====================
 
