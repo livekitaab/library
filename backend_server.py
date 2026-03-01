@@ -202,6 +202,7 @@ def check_purchase():
 def track_download():
     data    = request.json
     book_id = data.get('book_id')
+    title   = data.get('title', book_id)
     is_free = data.get('is_free', False)
 
     if not book_id:
@@ -210,17 +211,46 @@ def track_download():
     stats = load_json(STATS_FILE)
     if book_id not in stats['books']:
         stats['books'][book_id] = {
-            'total_downloads': 0, 'free_downloads': 0,
-            'paid_downloads': 0,  'revenue': 0
+            'title': title, 'total_reads': 0,
+            'free_reads': 0, 'sub_reads': 0, 'revenue': 0
         }
-    stats['books'][book_id]['total_downloads'] += 1
-    if is_free:
-        stats['books'][book_id]['free_downloads'] += 1
-    else:
-        stats['books'][book_id]['paid_downloads'] += 1
-    save_json(STATS_FILE, stats)
 
+    # Update title in case it changed
+    stats['books'][book_id]['title'] = title
+
+    # Migrate legacy field names if needed
+    if 'total_downloads' in stats['books'][book_id]:
+        old_total = stats['books'][book_id].pop('total_downloads', 0)
+        stats['books'][book_id].setdefault('total_reads', old_total)
+        stats['books'][book_id].pop('free_downloads', None)
+        stats['books'][book_id].pop('paid_downloads', None)
+
+    stats['books'][book_id]['total_reads'] = stats['books'][book_id].get('total_reads', 0) + 1
+    if is_free:
+        stats['books'][book_id]['free_reads'] = stats['books'][book_id].get('free_reads', 0) + 1
+    else:
+        stats['books'][book_id]['sub_reads'] = stats['books'][book_id].get('sub_reads', 0) + 1
+
+    save_json(STATS_FILE, stats)
     return jsonify({'success': True})
+
+@app.route('/api/admin/read-counts', methods=['GET'])
+def get_read_counts():
+    if request.headers.get('X-Admin-Key') != ADMIN_KEY:
+        return jsonify({'error': 'Unauthorized'}), 401
+    stats = load_json(STATS_FILE)
+    books = []
+    for book_id, data in stats.get('books', {}).items():
+        books.append({
+            'book_id':    book_id,
+            'title':      data.get('title', book_id),
+            'total_reads': data.get('total_reads', data.get('total_downloads', 0)),
+            'free_reads': data.get('free_reads', 0),
+            'sub_reads':  data.get('sub_reads', 0),
+        })
+    # Sort by total reads descending
+    books.sort(key=lambda x: x['total_reads'], reverse=True)
+    return jsonify({'books': books})
 
 # ==================== ADMIN ENDPOINTS ====================
 
