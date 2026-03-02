@@ -5,10 +5,10 @@
       "title": "Somoyer Chabikathi",
       "type": "novel",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover.png",
-      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/Test.clbk",
+      "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Somoyer%20Chabikathi/Chapter.json",
       "price": 0,
       "description": "A thrilling journey through time",
-      "author": "Team Livekitaab",
+      "author": "A.Chatterjee",
       "pages": 350,
       "upi_id": "arohanchatterjee881@okicici",
       "author_key": "LIVEKITAAB-SOMOYER-2026"
@@ -21,7 +21,7 @@
       "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Ordhek%20Payer%20Chap/Chapter.json",
       "price": 30,
       "description": "A gripping mystery in 200 pages",
-      "author": "Panpriya Nandi",
+      "author": "Pranpriya Nandi",
       "pages": 180,
       "upi_id": "arohanchatterjee881@okicici",
       "author_key": "NANDI-PAYER-CHAP-2026"
@@ -67,6 +67,7 @@
     }
   ]
 }
+
 
 
 
