@@ -64,9 +64,23 @@
       "pages": 180,
       "upi_id": "arohanchatterjee881@okicici",
       "author_key": "BABU-SC-2026"
+    },
+    {
+      "id": "sahajpath",
+      "title": "Sahaj Path",
+      "type": "novel",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Sahaj Path Cover.png",
+      "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Sohoj%20Path/Chapters.json",
+      "price": 0,
+      "description": "A thrilling journey through time",
+      "author": "Rabindranath Tagore",
+      "pages": 350,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "LIVEKITAAB-SAHAJPATH-2026"
     }
   ]
 }
+
 
 
 
