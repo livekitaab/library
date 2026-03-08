@@ -1,0 +1,41 @@
+{
+  "title": "Sohoj Path",
+  "author": "Rabindranath Thakur",
+  "chapters": [
+    {
+      "order": 1,
+      "title": "Chapter 1",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Sohoj%20Path/1.lbk"
+    },
+    {
+      "order": 2,
+      "title": "Chapter 2",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Sohoj%20Path/2.lbk"
+    },
+    {
+      "order": 3,
+      "title": "Chapter 3",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Sohoj%20Path/3.lbk"
+    },
+    {
+      "order": 4,
+      "title": "Chapter 4",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Sohoj%20Path/4.lbk"
+    },
+    {
+      "order": 5,
+      "title": "Chapter 5",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Sohoj%20Path/5.lbk"
+    },
+    {
+      "order": 6,
+      "title": "Chapter 6",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Sohoj%20Path/6.lbk"
+    },
+    {
+      "order": 7,
+      "title": "Chapter 7",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Sohoj%20Path/7.lbk"
+    }
+  ]
+}
