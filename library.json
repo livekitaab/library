@@ -71,7 +71,7 @@
       "type": "novel",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Sahaj Path Cover.png",
       "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Sohoj%20Path/Chapters.json",
-      "price": 0,
+      "price": 50,
       "description": "A thrilling journey through time",
       "author": "Rabindranath Tagore",
       "pages": 350,
@@ -80,6 +80,7 @@
     }
   ]
 }
+
 
 
 
