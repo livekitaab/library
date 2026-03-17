@@ -81,7 +81,7 @@
     {
       "id": "ABCD1",
       "title": "ABCD Poem 1",
-      "type": "Novels",
+      "type": "novel",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover2.png",
       "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/ABCD1/Chapters.json",
       "price": 10,
