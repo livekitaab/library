@@ -77,6 +77,19 @@
       "pages": 350,
       "upi_id": "arohanchatterjee881@okicici",
       "author_key": "LIVEKITAAB-SAHAJPATH-2026"
+    },
+    {
+      "id": "ABCD1",
+      "title": "ABCD Poem 1",
+      "type": "Novels",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover2.png",
+      "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/ABCD1/Chapters.json",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Team Livekitaab",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "ABCD1-2026"
     }
   ]
 }
