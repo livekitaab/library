@@ -40,6 +40,19 @@
       "author_key": "BABU-JS-2026"
     },
     {
+      "id": "EMS",
+      "title": "Ek Muhurter Sporsho",
+      "type": "short_story",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover1.png",
+      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/EMS.lbk",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Shubhankar Babu",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-EMS-2026"
+    },
+    {
       "id": "Sesh_Call",
       "title": "Sesh call",
       "type": "short_story",
