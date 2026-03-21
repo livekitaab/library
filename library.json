@@ -116,7 +116,19 @@
       "pages": 180,
       "upi_id": "arohanchatterjee881@okicici",
       "author_key": "ABCD1-2026"
-    }
+    },
+    {
+      "id": "AeFab1",
+      "title": "Aesop's Fables 1",
+      "type": "novella",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverAeFab1.png",
+      "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab1/Chapters.json",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "ABCD1-2026"
   ]
 }
 
