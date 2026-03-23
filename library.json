@@ -92,6 +92,19 @@
       "author_key": "BABU-JS-2026"
     },
     {
+      "id": "GrassAnt",
+      "title": "The Grasshopper And The Ant",
+      "type": "short_story",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverGA.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab1/3.lbk",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
       "id": "EMS",
       "title": "Ek Muhurter Sporsho",
       "type": "short_story",
