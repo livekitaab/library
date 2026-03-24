@@ -105,6 +105,32 @@
       "author_key": "BABU-JS-2026"
     },
     {
+      "id": "LionMouse",
+      "title": "The Lion And The Mouse",
+      "type": "short_story",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverLM.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab2/1.lbk",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
+      "id": "DogRef",
+      "title": "The Dog And It's Reflection",
+      "type": "short_story",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverDR.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab2/1.lbk",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
       "id": "EMS",
       "title": "Ek Muhurter Sporsho",
       "type": "short_story",
