@@ -53,11 +53,11 @@
       "author_key": "BABU-JS-2026"
     },
     {
-      "id": "Nursery_1",
-      "title": "Nursery Rhymes 1",
+      "id": "Nursery_2",
+      "title": "Nursery Rhymes 2",
       "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverNR1.png",
-      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Nursery%20Rhymes/1.lbk",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverNR2.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Nursery%20Rhymes/2.lbk",
       "price": 10,
       "description": "A gripping mystery in 200 pages",
       "author": "Team LiveKitaab",
