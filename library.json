@@ -3,7 +3,7 @@
     {
       "id": "somoyer",
       "title": "Somoyer Chabikathi",
-      "type": "novel",
+      "type": "long_book",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover.png",
       "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Somoyer%20Chabikathi/Chapter.json",
       "price": 0,
@@ -14,165 +14,9 @@
       "author_key": "LIVEKITAAB-SOMOYER-2026"
     },
     {
-      "id": "ordhek_payer_chap",
-      "title": "Ordhek Payer Chap",
-      "type": "novella",
-      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Payer Chap Cover.png",
-      "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Ordhek%20Payer%20Chap/Chapter.json",
-      "price": 30,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Pranpriya Nandi",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "NANDI-PAYER-CHAP-2026"
-    },
-    {
-      "id": "Jontrer_Songsar",
-      "title": "Poripati Jontrer Songsar",
-      "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover1.png",
-      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/JS.lbk",
-      "price": 10,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Shubhankar Babu",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "BABU-JS-2026"
-    },
-    {
-      "id": "Nursery_1",
-      "title": "Nursery Rhymes 1",
-      "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverNR1.png",
-      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Nursery%20Rhymes/1.lbk",
-      "price": 10,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Team LiveKitaab",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "BABU-JS-2026"
-    },
-    {
-      "id": "Nursery_2",
-      "title": "Nursery Rhymes 2",
-      "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverNR2.png",
-      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Nursery%20Rhymes/2.lbk",
-      "price": 10,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Team LiveKitaab",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "BABU-JS-2026"
-    },
-    {
-      "id": "HareTort",
-      "title": "The Hare And The Tortoise",
-      "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverHT.png",
-      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab1/1.lbk",
-      "price": 10,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Aesop",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "BABU-JS-2026"
-    },
-    {
-      "id": "BoyWolf",
-      "title": "The Boy Who Cried Wolf",
-      "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverBW.png",
-      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab1/2.lbk",
-      "price": 10,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Aesop",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "BABU-JS-2026"
-    },
-    {
-      "id": "GrassAnt",
-      "title": "The Grasshopper And The Ant",
-      "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverGA.png",
-      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab1/3.lbk",
-      "price": 10,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Aesop",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "BABU-JS-2026"
-    },
-    {
-      "id": "LionMouse",
-      "title": "The Lion And The Mouse",
-      "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverLM.png",
-      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab2/1.lbk",
-      "price": 10,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Aesop",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "BABU-JS-2026"
-    },
-    {
-      "id": "DogRef",
-      "title": "The Dog And It's Reflection",
-      "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverDR.png",
-      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab2/1.lbk",
-      "price": 10,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Aesop",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "BABU-JS-2026"
-    },
-    {
-      "id": "CrowPitch",
-      "title": "The Crow And The Pitcher",
-      "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverCP.png",
-      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab3/3.lbk",
-      "price": 10,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Aesop",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "BABU-JS-2026"
-    },
-    {
-      "id": "EMS",
-      "title": "Ek Muhurter Sporsho",
-      "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverEMS.png",
-      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/EMS.lbk",
-      "price": 10,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Shubhankar Babu",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "BABU-EMS-2026"
-    },
-    {
-      "id": "Sesh_Call",
-      "title": "Sesh call",
-      "type": "short_story",
-      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover Frayed.png",
-      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/PCO.lbk",
-      "price": 10,
-      "description": "A gripping mystery in 200 pages",
-      "author": "Shubhankar Babu",
-      "pages": 180,
-      "upi_id": "arohanchatterjee881@okicici",
-      "author_key": "BABU-SC-2026"
-    },
-    {
       "id": "sahajpath",
       "title": "Sahaj Path",
-      "type": "novel",
+      "type": "long_book",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Sahaj Path Cover.png",
       "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Sohoj%20Path/Chapters.json",
       "price": 50,
@@ -185,7 +29,7 @@
     {
       "id": "ABCD1",
       "title": "ABCD Poem 1",
-      "type": "novel",
+      "type": "long_book",
       "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover2.png",
       "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/ABCD1/Chapters.json",
       "price": 10,
@@ -196,13 +40,26 @@
       "author_key": "ABCD1-2026"
     },
     {
+      "id": "ordhek_payer_chap",
+      "title": "Ordhek Payer Chap",
+      "type": "long_book",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Payer Chap Cover.png",
+      "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Ordhek%20Payer%20Chap/Chapter.json",
+      "price": 30,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Pranpriya Nandi",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "NANDI-PAYER-CHAP-2026"
+    },
+    {
       "id": "AeFab1",
       "title": "Aesop's Fables 1",
-      "type": "novella",
+      "type": "long_book",
       "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverAeFab1.png",
       "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab1/Chapters.json",
       "price": 10,
-      "description": "A gripping mystery in 200 pages",
+      "description": "Classic fables retold for young readers",
       "author": "Aesop",
       "pages": 180,
       "upi_id": "arohanchatterjee881@okicici",
@@ -211,29 +68,158 @@
     {
       "id": "AeFab2",
       "title": "Aesop's Fables 2",
-      "type": "novella",
+      "type": "long_book",
       "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverAeFab2.png",
       "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab2/Chapters.json",
       "price": 10,
-      "description": "A gripping mystery in 200 pages",
+      "description": "Classic fables retold for young readers",
       "author": "Aesop",
       "pages": 180,
       "upi_id": "arohanchatterjee881@okicici",
       "author_key": "AeFab2-2026"
+    },
+    {
+      "id": "Jontrer_Songsar",
+      "title": "Poripati Jontrer Songsar",
+      "type": "short_book",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover1.png",
+      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/JS.lbk",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Shubhankar Babu",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
+      "id": "Nursery_1",
+      "title": "Nursery Rhymes 1",
+      "type": "short_book",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverNR1.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Nursery%20Rhymes/1.lbk",
+      "price": 10,
+      "description": "A collection of classic nursery rhymes",
+      "author": "Team LiveKitaab",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
+      "id": "Nursery_2",
+      "title": "Nursery Rhymes 2",
+      "type": "short_book",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverNR2.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/Nursery%20Rhymes/2.lbk",
+      "price": 10,
+      "description": "A collection of classic nursery rhymes",
+      "author": "Team LiveKitaab",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
+      "id": "HareTort",
+      "title": "The Hare And The Tortoise",
+      "type": "short_book",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverHT.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab1/1.lbk",
+      "price": 10,
+      "description": "A classic Aesop's fable",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
+      "id": "BoyWolf",
+      "title": "The Boy Who Cried Wolf",
+      "type": "short_book",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverBW.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab1/2.lbk",
+      "price": 10,
+      "description": "A classic Aesop's fable",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
+      "id": "GrassAnt",
+      "title": "The Grasshopper And The Ant",
+      "type": "short_book",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverGA.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab1/3.lbk",
+      "price": 10,
+      "description": "A classic Aesop's fable",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
+      "id": "LionMouse",
+      "title": "The Lion And The Mouse",
+      "type": "short_book",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverLM.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab2/1.lbk",
+      "price": 10,
+      "description": "A classic Aesop's fable",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
+      "id": "DogRef",
+      "title": "The Dog And Its Reflection",
+      "type": "short_book",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverDR.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab2/1.lbk",
+      "price": 10,
+      "description": "A classic Aesop's fable",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
+      "id": "CrowPitch",
+      "title": "The Crow And The Pitcher",
+      "type": "short_book",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverCP.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab3/3.lbk",
+      "price": 10,
+      "description": "A classic Aesop's fable",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
+      "id": "EMS",
+      "title": "Ek Muhurter Sporsho",
+      "type": "short_book",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverEMS.png",
+      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/EMS.lbk",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Shubhankar Babu",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-EMS-2026"
+    },
+    {
+      "id": "Sesh_Call",
+      "title": "Sesh Call",
+      "type": "short_book",
+      "cover": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Covers/Cover Frayed.png",
+      "file": "https://raw.githubusercontent.com/achatterjee4561-cyber/library/main/Books/PCO.lbk",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Shubhankar Babu",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-SC-2026"
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
