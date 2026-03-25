@@ -131,6 +131,19 @@
       "author_key": "BABU-JS-2026"
     },
     {
+      "id": "CrowPitch",
+      "title": "The Crow And The Pitcher",
+      "type": "short_story",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverCP.png",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab3/3.lbk",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "BABU-JS-2026"
+    },
+    {
       "id": "EMS",
       "title": "Ek Muhurter Sporsho",
       "type": "short_story",
@@ -194,6 +207,19 @@
       "pages": 180,
       "upi_id": "arohanchatterjee881@okicici",
       "author_key": "AeFab1-2026"
+    },
+    {
+      "id": "AeFab2",
+      "title": "Aesop's Fables 2",
+      "type": "novella",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverAeFab2.png",
+      "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab2/Chapters.json",
+      "price": 10,
+      "description": "A gripping mystery in 200 pages",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "AeFab2-2026"
     }
   ]
 }
