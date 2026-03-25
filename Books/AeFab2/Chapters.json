@@ -1,0 +1,16 @@
+{
+  "title": "Aesop's Fables 2",
+  "author": "Aesop",
+  "chapters": [
+    {
+      "order": 1,
+      "title": "Chapter 1",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab2/1.lbk"
+    },
+    {
+      "order": 2,
+      "title": "Chapter 2",
+      "file": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab2/2.lbk"
+    }
+  ]
+}
