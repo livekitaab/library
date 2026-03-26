@@ -79,6 +79,19 @@
       "author_key": "AeFab2-2026"
     },
     {
+      "id": "AeFab3",
+      "title": "Aesop's Fables 3",
+      "type": "long_book",
+      "cover": "https://raw.githubusercontent.com/livekitaab/library/main/Covers/CoverAeFab3.png",
+      "chapters": "https://raw.githubusercontent.com/livekitaab/library/main/Books/AeFab3/Chapters.json",
+      "price": 10,
+      "description": "Classic fables retold for young readers",
+      "author": "Aesop",
+      "pages": 180,
+      "upi_id": "arohanchatterjee881@okicici",
+      "author_key": "AeFab3-2026"
+    },
+    {
       "id": "Jontrer_Songsar",
       "title": "Poripati Jontrer Songsar",
       "type": "short_book",
